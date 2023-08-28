@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora con las operaciones de suma, resta, multiplicacion y division</title>
+<!--importar el archivo externo de extension "css"-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <div>
+    <h3>Calculadora Aritmetica Simple</h3>
+    <hr>
+    <input type="text" id="op1" placeholder="ingrese primer numero">
+    <br>
+    
+    <select id="funciones">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <br>
+    <input type="text" id="op2"  placeholder="ingrese segundo numero">
+    <button type="button" onclick="calcular()">=</button>
+    <p id="resultado"></p>
+    
+  </div>
+</main>
+
+<!--importar el archivo externo de extension "js"-->
+<script src="main.js"></script>
+</body>
+</html>
